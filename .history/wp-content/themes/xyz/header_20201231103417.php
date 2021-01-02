@@ -29,18 +29,18 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<?php
-				wp_nav_menu(
-					array(
-						'theme_location' => 'menu-1',
-						'menu_id'        => 'primary-menu',
-						'menu_class'     => 'navbar-nav ml-auto',
-						'container'      => 'ul',	
-					)
-				);
-				?>
-			</div>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+					'menu_class'     => 'navbar-nav ml-auto',
+					'container'      => 'ul',	
+				)
+			);
+			?>
 		</div>
-	</nav><!-- #site-navigation -->
-</header><!-- #masthead -->
+		</div>
+		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->

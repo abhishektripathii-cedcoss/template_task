@@ -42,5 +42,5 @@
 				?>
 			</div>
 		</div>
-	</nav><!-- #site-navigation -->
-</header><!-- #masthead -->
+		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->

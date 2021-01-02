@@ -204,11 +204,10 @@ function wpdocs_five_posts_on_homepage( $query ) {
 		$query->set( 'posts_per_page', 5 );
 	}
 }
-// add_action( 'pre_get_posts', 'wpdocs_five_posts_on_homepage' ).
+// add_action( 'pre_get_posts', 'wpdocs_five_posts_on_homepage' );
 
-/**
- * Sidebar placeholder text for search box
- */
+/* sidebar placeholder text for search box */
+
 function wpforo_search_form( $html ) {
 
 	$html = str_replace( 'placeholder="Search ', 'placeholder="TYPE TO SEARCH ', $html );

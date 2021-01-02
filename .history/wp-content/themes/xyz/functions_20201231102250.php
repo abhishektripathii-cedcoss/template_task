@@ -194,21 +194,20 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-/* file inclusion*/
+/* file inclusion 
 require get_template_directory() . '/classes/class-xyz-widget-categories.php';
 
 
-/** Function for home.php (blog entries) */	
+/*function for home.php (blog entries) */	
 function wpdocs_five_posts_on_homepage( $query ) {
 	if ( $query->is_home() && $query->is_main_query() ) {
 		$query->set( 'posts_per_page', 5 );
 	}
 }
-// add_action( 'pre_get_posts', 'wpdocs_five_posts_on_homepage' ).
+// add_action( 'pre_get_posts', 'wpdocs_five_posts_on_homepage' );
 
-/**
- * Sidebar placeholder text for search box
- */
+/* sidebar placeholder text for search box */
+
 function wpforo_search_form( $html ) {
 
 	$html = str_replace( 'placeholder="Search ', 'placeholder="TYPE TO SEARCH ', $html );

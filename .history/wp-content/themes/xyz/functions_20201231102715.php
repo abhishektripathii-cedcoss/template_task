@@ -209,6 +209,7 @@ function wpdocs_five_posts_on_homepage( $query ) {
 /**
  * Sidebar placeholder text for search box
  */
+
 function wpforo_search_form( $html ) {
 
 	$html = str_replace( 'placeholder="Search ', 'placeholder="TYPE TO SEARCH ', $html );
